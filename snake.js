@@ -16,7 +16,7 @@ let metaComidas = 7;
 
 // Fundo do Tabuleiro
 const imagemFundo = new Image();
-imagemFundo.src = "Fundo_do_tabulero.jpg";
+imagemFundo.src = "Imagens/Fundo_do_tabulero.jpg";
 
 // Tipos diferentes de alimento
 const tiposDeAlimento = [
