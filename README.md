@@ -1,108 +1,159 @@
-🐍 A Cobra Vai Fumar!
+# 🐍 A Cobra Vai Fumar!
 
-📌 Sobre o projeto
+Um jogo de cobrinha inspirado no clássico **Snake**, desenvolvido com **HTML, CSS e JavaScript**, trazendo algumas mecânicas extras para deixar a experiência mais divertida e desafiadora.
 
-A Cobra Vai Fumar! é um jogo de cobrinha desenvolvido com HTML, CSS e JavaScript, inspirado no clássico jogo Snake.
+O jogador controla a cobra, coleta frutas, acumula pontos e tenta alcançar as maiores pontuações sem bater nas paredes ou no próprio corpo.
 
-A ideia é simples: o jogador controla a cobra usando as setas do teclado, coleta as frutas espalhadas pelo tabuleiro e tenta conseguir a maior pontuação possível sem bater nas paredes ou no próprio corpo.
+---
 
-O jogo também possui sistema de vidas, recorde, histórico de jogadores, ranking, efeitos sonoros e frutas com diferentes valores de pontuação.
+## 🎮 Sobre o projeto
 
-🎮 Como jogar
+**A Cobra Vai Fumar!** é um projeto desenvolvido para praticar conceitos de desenvolvimento web e lógica de programação.
 
-Digite seu nome no menu inicial e pressione Enter para começar.
+Além da mecânica tradicional do Snake, o jogo possui:
 
-Controles
+* 🍎 Frutas com diferentes pontuações;
+* ❤️ Sistema de vidas;
+* 🏆 Sistema de recordes;
+* 📊 Ranking com os 10 melhores resultados;
+* 👤 Histórico de jogadores;
+* 🔊 Efeitos sonoros;
+* ⏱️ Contagem regressiva;
+* 🐍 Aumento progressivo da velocidade;
+* 🎯 Fruta com movimentação especial;
+* 💾 Salvamento de dados utilizando `localStorage`.
 
-⬆️ Seta para cima — movimenta a cobra para cima
+---
 
-⬇️ Seta para baixo — movimenta a cobra para baixo
+## 🕹️ Como jogar
 
-⬅️ Seta para esquerda — movimenta a cobra para a esquerda
+Ao abrir o jogo, digite seu nome no menu inicial e pressione **Enter** para começar.
 
-➡️ Seta para direita — movimenta a cobra para a direita
+O objetivo é simples:
 
-Também existem botões para iniciar, pausar e reiniciar o jogo.
+> **Controle a cobra, coma as frutas, faça o máximo de pontos possível e tente sobreviver até o fim!**
 
-🍎 Frutas
+### 🎯 Controles
 
-Fruta
+| Tecla                 | Ação                            |
+| --------------------- | ------------------------------- |
+| ⬆️ Seta para cima     | Movimenta a cobra para cima     |
+| ⬇️ Seta para baixo    | Movimenta a cobra para baixo    |
+| ⬅️ Seta para esquerda | Movimenta a cobra para esquerda |
+| ➡️ Seta para direita  | Movimenta a cobra para direita  |
 
-Pontuação
+O jogo também possui botões para:
 
-🔴 Vermelha
+* ▶️ Iniciar;
+* ⏸️ Pausar;
+* 🔄 Reiniciar.
 
-10 pontos
+---
 
-🟡 Amarela
+## 🍎 Frutas
 
-20 pontos
+Existem três tipos de frutas no jogo.
 
-🔵 Azul
+| Fruta       | Pontuação |
+| ----------- | --------: |
+| 🔴 Vermelha | 10 pontos |
+| 🟡 Amarela  | 20 pontos |
+| 🔵 Azul     | 30 pontos |
 
-30 pontos
+As frutas aparecem em posições aleatórias do tabuleiro e o sistema evita que elas sejam colocadas sobre o corpo da cobra.
 
-As frutas aparecem em posições aleatórias e não são colocadas sobre a cobra.
+---
 
-🐍 Mecânica especial
+## 🐍 Mecânica especial
 
-Depois que o jogador come 7 frutas, o alimento começa a se movimentar pelo tabuleiro.
+Depois que o jogador coleta **7 frutas**, uma mecânica especial é ativada.
 
-Isso aumenta a dificuldade, pois o jogador precisa acompanhar uma fruta que pode mudar de posição enquanto controla a cobra.
+A fruta passa a **se movimentar pelo tabuleiro**, aumentando o nível de dificuldade.
 
-A velocidade da cobra também aumenta conforme a pontuação cresce.
+O jogador precisa acompanhar a posição da fruta enquanto continua controlando a cobra.
 
-❤️ Sistema de vidas
+Além disso, a **velocidade da cobra aumenta conforme a pontuação cresce**, deixando a partida progressivamente mais desafiadora.
 
-O jogador começa com 3 vidas.
+---
 
-Quando a cobra bate em uma parede ou no próprio corpo, uma vida é perdida.
+## ❤️ Sistema de vidas
 
-Se ainda houver vidas, a cobra é reposicionada e uma contagem regressiva acontece antes da partida continuar.
+O jogador começa a partida com:
 
-Quando todas as vidas acabam, o jogo termina e o resultado é salvo.
+**❤️ 3 vidas**
 
-🏆 Recorde e rankings
+Uma vida é perdida quando a cobra:
 
-O projeto utiliza o localStorage do navegador para guardar as informações.
+* 🧱 Bate em uma parede;
+* 🐍 Bate no próprio corpo.
 
-Histórico de jogadores
+Caso ainda existam vidas, a cobra é reposicionada e uma **contagem regressiva** acontece antes da partida continuar.
 
-Registra o nome e a pontuação das partidas realizadas.
+Quando todas as vidas acabam:
 
-Ranking Extra
+> 💀 **Fim de jogo!**
 
-Organiza as pontuações da maior para a menor e mantém os 10 melhores resultados.
+O resultado da partida é então salvo no histórico e pode aparecer no ranking.
 
-🔊 Efeitos sonoros
+---
 
-O jogo possui sons para diferentes acontecimentos:
+## 🏆 Recorde e ranking
 
-Contagem regressiva;
+O jogo utiliza o **LocalStorage do navegador** para armazenar informações mesmo depois que a página é recarregada.
 
-Coleta de frutas;
+### 👤 Histórico de jogadores
 
-Perda de vida;
+O histórico registra informações das partidas realizadas, incluindo:
 
-Derrota;
+* Nome do jogador;
+* Pontuação obtida.
 
-Início da partida.
+### 🥇 Ranking Extra
 
-Os efeitos são produzidos pelo JavaScript utilizando a Web Audio API.
+O ranking organiza as pontuações da **maior para a menor** e mantém os **10 melhores resultados**.
 
-🎨 Imagens
+Isso permite que diferentes jogadores tentem superar as melhores pontuações registradas no navegador.
 
-Para manter o projeto organizado, todas as imagens devem ficar dentro da pasta:
+---
 
+## 🔊 Efeitos sonoros
+
+O jogo possui efeitos sonoros para diferentes acontecimentos durante a partida.
+
+Entre eles:
+
+* ⏱️ Contagem regressiva;
+* 🍎 Coleta de frutas;
+* ❤️ Perda de vida;
+* 💀 Derrota;
+* ▶️ Início da partida.
+
+Os efeitos sonoros são produzidos diretamente pelo JavaScript utilizando a **Web Audio API**, sem necessidade de bibliotecas externas de áudio.
+
+---
+
+## 🎨 Imagens
+
+Para manter o projeto organizado, as imagens utilizadas pelo jogo ficam dentro da pasta:
+
+```text
 imagem/
+```
 
-Exemplo:
+### Exemplos
 
+```text
 imagem/Fundo4.png
 imagem/Fundo_do_tabulero.jpg
+```
 
-📁 Estrutura do projeto
+É importante manter os nomes e caminhos dos arquivos de imagem corretos para que o jogo consiga carregá-los.
 
+---
+
+## 📁 Estrutura do projeto
+
+```text
 A-Cobra-vai-Fumar/
 │
 ├── index.html
@@ -113,49 +164,64 @@ A-Cobra-vai-Fumar/
 └── imagem/
     ├── Fundo4.png
     └── Fundo_do_tabulero.jpg
+```
 
-🛠️ Tecnologias utilizadas
+---
 
-HTML5
+## 🛠️ Tecnologias utilizadas
 
-CSS3
+### HTML5
 
-JavaScript
+Utilizado para criar a estrutura da página e os elementos da interface.
 
-Canvas API
+### CSS3
 
-Web Audio API
+Utilizado para estilização, layout, cores, elementos visuais e apresentação do jogo.
 
-LocalStorage
+### JavaScript
 
-🚀 Como executar
+Responsável pela lógica principal do jogo, incluindo movimentação da cobra, pontuação, vidas, frutas, controles e estados da partida.
 
-Não é necessário instalar nenhuma biblioteca.
+### Canvas API
 
-Baixe ou clone o projeto.
+Utilizada para desenhar e atualizar o tabuleiro e os elementos do jogo.
 
-Mantenha os arquivos na estrutura indicada acima.
+### Web Audio API
 
-Abra o index.html no navegador.
+Utilizada para gerar os efeitos sonoros da partida diretamente pelo navegador.
 
-Digite seu nome.
+### LocalStorage
 
-Pressione Enter.
+Utilizado para armazenar:
 
-Use as setas para controlar a cobra.
+* Histórico de jogadores;
+* Pontuações;
+* Ranking.
 
-🌐 Link do projeto
+---
 
-Site: [adicione aqui o link do seu site]
+## 🚀 Como executar
 
-📚 Objetivo do projeto
+Não é necessário instalar bibliotecas ou frameworks.
 
-O projeto foi desenvolvido para praticar conceitos de desenvolvimento web e lógica de programação, incluindo manipulação do DOM, eventos de teclado, funções JavaScript, Canvas, armazenamento com localStorage e reprodução de sons.
+### 1. Clone o repositório
 
-📞 Contato
+```bash
+git clone https://github.com/SEU-USUARIO/A-Cobra-vai-Fumar.git
+```
 
-E-mail: davidcapulot2025@gmail.com
+### 2. Entre na pasta
 
-Celular: 21965201025
+```bash
+cd A-Cobra-vai-Fumar
+```
 
-⭐ A Cobra Vai Fumar! — um projeto simples inspirado no clássico Snake, com algumas mecânicas extras para deixar a partida mais divertida.
+### 3. Verifique a estrutura
+
+Certifique-se de que os arquivos estejam organizados desta forma:
+
+```text
+A-Cobra-vai-Fumar/
+├── index.html
+├── snake.css
+```
